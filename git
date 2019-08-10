@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+typedef long long l1;
+
+
+int main()
+{
+    l1 p,d,temp;
+    cin>>p>>d;
+    l1 ans=p;
+    while(1)
+    {
+        temp=(p*d)/100;
+        if(temp==0)
+              break;
+        p-=temp;
+        ans+=p;
+     }
+     cout<<ans<<'\n';
+}     
